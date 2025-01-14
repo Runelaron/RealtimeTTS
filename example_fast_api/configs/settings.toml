@@ -1,0 +1,25 @@
+[general]
+
+supported_engines = [
+    # "azure",
+    # "elevenlabs",
+    # "coqui",  # multiple queries are not supported on coqui engine right now, comment coqui out for tests where you need server start often
+    "edge",
+    "gtts",
+    # "kokoro",
+    # "piper",
+    # "openai",
+    # "style",
+    "system",
+]
+
+# Set to sdesired start engine
+start_engine = "gtts"
+
+[save_settings]
+save = false
+folder = "data"
+format = ".wav"
+
+[advanced]
+deepspeed = false

@@ -1,0 +1,39 @@
+[
+    {
+        "sink": "listener_debug.log",
+        "levels": ["DEBUG"],
+        "rotation": "1 hour",
+        "retention": "1day",
+        "format": "{time} {icon} {level} {message}",
+        "colorize": false,
+        "icon": "🐞",
+        "encoding": "utf-8"
+    },
+    {
+        "sink": "listener_info.log",
+        "levels": ["INFO", "SUCCESS"],
+        "rotation": "1 hour",
+        "retention": null,
+        "format": "{time} {icon} {level} {message}",
+        "colorize": false,
+        "icon": "ℹ️",
+        "encoding": null
+    },
+    {
+        "sink": "listener_error.log",
+        "levels": ["WARNING", "ERROR", "CRITICAL"],
+        "rotation": "1 hour",
+        "retention": "",
+        "format": "{time} {icon} {level} {message}\nExtra: {extra}\n",
+        "colorize": true,
+        "icon": "⚠️",
+        "encoding": "utf-8"
+    },
+    {
+        "sink": "sys.stdout",
+        "levels": ["INFO", "SUCCESS", "WARNING", "ERROR", "CRITICAL"],
+        "format": "<green>{time}</green> {icon} <level>{level}</level> {message}",
+        "colorize": true,
+        "icon": ""
+    }
+]
