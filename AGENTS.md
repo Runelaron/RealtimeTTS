@@ -1,5 +1,3 @@
-
-
 <!-- tpl:repo-followthrough:start -->
 
 ## Scoped Execution And Completion
